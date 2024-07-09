@@ -148,7 +148,8 @@ hr {
 .SectionB{
     background-color: #FFFF;
     height: 400px;
-    padding: 25px;
+    padding: 50px;
+    top: 200px;
 }
 
 /* .Wave{
@@ -277,6 +278,58 @@ hr {
     background-color:#FFDB59;
 }
 
+.projects {
+    position:absolute;
+    width: 50%;
+    margin-left: 25%;
+  }
+  
+  .projectPic {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #9ca3a6;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+
+  .overlay2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #9ca3a6;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  .projects:hover .overlay {
+    height: 100%;
+  }
+   
+  .text2 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
 .blog a{
     color:#FFDB59;
     text-align: center;
@@ -305,6 +358,8 @@ hr {
 .content2{
     flex: 1;
 }
+
+
 
 /* class="projectPic" */
 .projectPic{
@@ -453,7 +508,7 @@ video{
     bottom: 150px;
     height: 90vh;
     position:relative;
-    margin-top: 300px;
+    margin-top: 250px;
 }
 
 /* Add some content at the bottom of the video/page */
@@ -464,7 +519,7 @@ video{
     padding: 50px;
     z-index: 1050;
     position: absolute;
-    bottom: 200px;
+    bottom: 150px;
   }
   
   /* Style the button used to pause/play the video */
@@ -476,6 +531,7 @@ video{
     background: #000;
     color: #fff;
     cursor: pointer;
+    margin-top: 50px;
   }
   
   #myBtn:hover {
